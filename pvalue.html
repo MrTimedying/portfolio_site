@@ -13,22 +13,26 @@
 <!--- Here is the Nav Bar, simple and clean--->
 <header>
     <div class="inner">
-      <h1><a href="home.html">.p-project</a></h1>
+      <h1><a href="index.html">.p-project</a></h1>
       <nav class="on-about">
         <ul>
-          <li><a href="home.html" class="nav-about">About</a></li>
+          <li><a href="index.html" class="nav-about">About</a></li>
           <li><a href="/p-project.html" class="nav-guides">.p-project</a></li>
-          <li><a href="/waypoints/shortcuts/sticky-elements" class="nav-shortcuts">CV</a></li>
-          <li><a href="/waypoints/api/waypoint" class="nav-api">Python Graphic</a></li>
+          <li><a href="javascript:void(0);" class="nav-shortcuts">CV</a></li>
+          <li><a href="javascript:void(0);" class="nav-api">Python Graphic</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-<div class="main">
-  <div class="navigation">
-This is the navigation
-  </div>
+  <div class="main">
+    <div class="navigation">
+  <ul>
+    <li><a href="p-project.html">About the .p-project</a></li>
+    <li><a href="pvalue.html">p-value</a></li>
+  </ul>
+    </div>
+  
   <div class="article">
     <h1>The p-value</h1>
 
@@ -116,7 +120,7 @@ This is the navigation
    <br> This is the paradox of the deus ex machina, all knowing, that draws conclusion from a completely unrealistic perspective. So no, p-value and alpha level do not agree, unless you draw samples from the exact same population with absolute perfect form. Basically what van Helden is saying is that the alpha level agrees with itself.
     But let’s argue from the (wrong) point of view of van Helden. In a real life scenario (we are still not bringing noise and design flaws in the picture) you could not tell which one of the p-values is part of the group of the “correct” p-values. One does not know from which population she’s sampling. So you do not know the actual nature of that p-value: if it results from the same population, or if there was noise in the estimates, if by sampling outliers would or could skew the standard deviation. A lot of other factors, which was the point of McCloskey et al., should be considered instead.
     
-    <div class="graphContainer"><img src="Images/pvaluegraphs/bigGreed.svg" class="graphs" id="big"></div>
+    <div class="graphContainer"><img src="Images/pvaluegraphs/bigGreed.svg" class="graphs_big"></div>
 
     <br>I will go as far as not argue the point of replacing the p-values with the confidence intervals, since I do not share the same view as McCloskey. I don’t think that confidence intervals show precision, in a single setting. In fact they present the same flaws of p-values that I just presented. A narrower confidence interval would make you more confident erroneously if being presented with an effect size resulted from comparing samples from the same population. You could have a narrow effect size and an extremely small p-value and still have a false positive. 
     These are some of the graphs I reproduced. In figure 6 we can see the distribution of the confidence intervals gap and their distribution. We can see that the gaps coming from the samples with 100 observations are narrower and hover around having a gap similar to the difference of the mean.
