@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+<!--- This div will contain the whole page--->
+<div class="container">
+<!--- Here is the Nav Bar, simple and clean--->
+<header>
+    <div class="inner">
+      <h1><a href="home.html">.p-project</a></h1>
+      <nav class="on-about">
+        <ul>
+          <li><a href="home.html" class="nav-about">About</a></li>
+          <li><a href="/p-project.html" class="nav-guides">.p-project</a></li>
+          <li><a href="/waypoints/shortcuts/sticky-elements" class="nav-shortcuts">CV</a></li>
+          <li><a href="/waypoints/api/waypoint" class="nav-api">Python Graphic</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<div class="main">
+  <div class="navigation">
+This is the navigation
+  </div>
+  <div class="article">
+    <h1>The p-value</h1>
+
+    <p>The p-value is a name given to a seemingly probabilistic value that has been changed in different ways shapes and forms across different types of statistical tests. The value is closely related to what it is called the “test of significance” which is a matter dearly close to the heart of a lot of scientists who have discussed its basic foundations and means over the years since the first appearance of the term.
+    However the first appearance of the term “P” to indicate the result of a significance test can be backtracked to one of the first and earliest publications of Ronald Fisher, that we can confidently define, the “inventor” of the modern scientific method and science. The paper titled “On the Interpretation of χ2 from Contingency Tables, and the Calculation of P” published in the Journal of the Royal Statistical Society in 1922, was the first one to mention this value of p as an actual measure of a significance test. 
+    However, as many authors before us tend to notice, the term significance in general and the idea of comparing means and variability of randomly sampled groups, has its roots as far back as the ancient Greece. Was it Cicero in his celeber dialogue “De divinatione” who was implying that a difference of a certain magnitude could not be attributed to casualty.
+    <br>
+    <div class="quote">“Casu, inquis. Itane vero? Quicquam potest casu esse factum, quod omnes habet in se numeros veritatis? Quattuor tali iacti casu Venerium efficiunt; num etiam centum Venerios, si quadringentos talos ieceris, casu futuros putas? Adspersa temere pigmenta in tabula oris liniamenta efficere possunt; num etiam Veneris Coae pulchritudinem effici posse adspersione fortuita putas? Sus rostro si humi A litteram impresserit, num propterea suspicari poteris Andromacham Enni ab ea posse describi? Fingebat Carneades in Chiorum lapicidinis saxo diffisso caput exstitisse Panisci; credo, aliquam non dissimilem figuram, sed certe non talem, ut eam factam a Scopa diceres. Sic enim se profecto res habet, ut numquam perfecte veritatem casus imitetur.”</div>
+    <br>
+    <div class="quote">“By chance, you’re saying? But can really happen by chance, something that has in itself all the characteristics of truth? Four dices, thrown randomly, are giving a “Venus sign”; but if you threw four hundred dices, and you obtained a Venus sign at least a hundred times, would you believe that a chance? [...] Some colors splattered by chance on a drawing board can remind the lines of a face; but would you believe that randomly splattering colors you might obtain the beauty of the Venus of Coo? If a pig drew an “a” with his mouth on the soil, would you believe him being able to write Ennio’s Andromaca? [...] This is how things are, there’s no doubt: Chance shall never be able to imitate the Truth perfectly.”</div>
+    <br>
+    <b>Ziliak</b>  and <b>McCloskey</b> identify this first appearance of the significance way of thinking, and in their celeber book “The Cult of Statistical Significance” they broadly address the topic. However, I’m not quite sure they have fully exhausted this particular reference to the core, considering they took a translated version of the latin masterpiece. With a more strict translation one could argue that Cicerone was not indeed laying the foundation for significance, but perhaps displaying an insane level of statistical insights (for that time) that would aid the vast majority of researchers nowadays. With the thirteenth paragraph (not the 23rd as Ziliak and McCloskey report in their book), Cicerone, through his character Quintus (his brother), is basically making a case for repetition and patterns of occurrences.
+    He basically understood the p-value before it was even invented or mathematically formalized. Here we arrive at one of the biggest incorrect beliefs about the p-value, given by the classical rhyme “p-value is the probability of something happening by chance alone”. This particular idea has come in various shapes and forms, but the substance of it all is this. The incorrect belief that the p-value has something to do with the epistemological nature of a test, answering the question of “did I find something?”. 
+    Although it’s true that chance is a data generating process, if we can call it this way, it is also true that we cannot attribute the result of an experiment to chance itself. How could we? Considering how many steps are governed and controlled by humans, it is more likely that fluctuations or noise in our data could derive from human error (which is not chance).
+    But here we arrive at the first paragraph of our journey: what is the p-value really? </p>
+    
+    
+    <h1>Origin of the p-value: William Sealy Gosset</h1>
+    
+    The actual inventor of a lot of our statistical tools for hypothesis testing is Sir William Gosset, who was mainly a brewer working for Guinness (not the world record, but the beer company). He was indeed a scientist, but not an academic. He published some articles under the pseudonym of Student. The Student’s t test, takes its name from him. He was the first to formalize the z-score and t-score tables from which all the modern tests of significance take the p-values from.
+    The reason why Gosset “invented” or better, discovered this relationship in the random sampling behavior, was because he was interested in a method that could give him some sort of suggestion in terms of decision making when dealing with very small samples. Working with an actual company, he was called to decide which stock of barley or hop was better for brewing. Since that was the prime matter for beer, the company could not afford to give him large samples to draw conclusions from, hence small samples decisions. However, Gosset was never concerned with the “did I find something?” question. He believed that the more important question was “how much?”. Basically for him quantifying and estimating was the way to go in order to implement informed decisions, especially in a commercial business. 
+    But if that was his concern, where does the current concept of the p-value come from? Well, contrary to him, Ronald Fisher, another important and prominent statistician of the first half of the 20th century, believed and transformed the important question into a philosophical matter.
+    
+    So, since Sir Ronald Fisher believed that the p-value could answer the question about the existence or not of a true effect, what did Sir Gosset instead believed? He simply believed that the p-value was not able to answer such a question, and he later availed the methodological framework of Eagon Pearson (the son of Karl Pearson), who believed that the scientific method was a tradeoff between two possible types of errors. But, on the subject of the p-value, there is no possibility on earth that the index could mitigate the uncertainty of a true effect being there or not (as frequentists would say, the data generating process).
+    
+    <h1>What is the p-value?</h1>
+    
+    The p-value is none other than an assigned (ascribed) probabilistic value that has been stripped of its probabilistic nature. In his first publication for the journal Biometrika, Sir Gosset (“The probable error of the mean” 1925) delines the distribution of z, the now known z-score. He does that by sampling random features of reality, such as finger length distribution, and noted that the more numerous the sample was, the more a distribution (that was indeed normal) would resemble normality. He accounted for the error of lesser distribution inferred from smaller samples. So, when someone computes a p-value, that is none other than the PDF (probability density function) ascribed to such “lesser” distributions, it comes by default that with a higher numerosity and a smaller standard deviation you have a higher p-value. However, this comes from a pre-built distribution which has (possibly) nothing to do with the actual measurements of our modern day experiment.
+    So, this is not a discount of the mathematical genius of Sir Gosset or Sir Ronald Fisher, because for what we know today, the p-value reconcile with the alpha (type I error) on very big sampling numbers (see later), but just a beware of the nature of the index itself.
+    
+    Contrary to the belief of many, the p-value is not an actual probability, since both the frequentist and the Bayesian view of a probability entails the central paradigm of repetition or observation (realization of the random variable). That is not actually happening in any experiment computing a p-value, but what is actually computed is the effect size, or the actual mean of the sample (with the associated standard deviation, which is, in my opinion, the actual important index to look for).
+    
+    Another common disbelief is the threshold of significance, which are basically some absolutely arbitrary points which do not have anything to do with the whole picture. The .05 is not a magic number below which our findings become relevant, and it is not a magic threshold at which our uncertainty becomes certainty. There is absolutely no trust to be put in the .05 or the .01 thresholds (there is also the .001, which is the minimum required for hard sciences), and nothing to gain by claiming a discovery having descended below that. But still, researchers fail to understand that, blinded and tormented by the question “how can we say that we have found something then?”. Well, isn’t the question you’re asking yourself wrong in the first place? This is where, for example, a machine learning approach at a philosophical level could aid a lot of statistics.
+    In model building through machine learning we are not worried about why something works in a certain way, we are only concerned about decision making. And for decision making we want to know how well the model predicts reality, from that point we can also infer and postulate mechanistic relationships between parts of the model and ad finem, suppose why something behaves a certain way. The question that has been lost, or the focus has shifted from, “what can I do with it?” to “how am I sure?”. But isn’t a model capable of replicating reality, mechanistically embedded by definition? And we are back with the reflection of Cicerone, and how he claimed that if something repeatedly acts the same way, with only a few errors, that is indeed something true without the need to ask an index what to think or to answer the question for ourselves.
+    Thus said, would I bet my money on the smaller p-value if presented with a range of values? Yes. But would I do the same if I were presented with a range of effect sizes? Yes, of course. However, this is not the article where I speak about decision making. In conclusion for this section, p-value must be treated as it is, an added value that could synthesize the magnitude of samples and standard deviation estimation, but not measure of certainty or a threshold.
+    
+    Simulations and the behavior of .p
+    
+    I made use of my Python skills to reproduce some experiments published in the recent decade, about the p-value. The first experiment I tried to reproduce was the one from McCloskey of 2015, which has been also criticized for the conclusions and erroneously addressed. I will address the critique later on, for the moment I will hereby present a reproduction of the experiment, with my personal take and a different adjustment of the whole simulation. It is also possible to find the complete notebook with all the code I used in my repository on github.
+    First of all, I’ve used a random generator process in order to sample an n amount of samples from a normal distribution. Personally, I would like to repeat this experiment with a complete random distribution that would also implement the concept of noise and other occurrences that can be found in real life. 
+    So two samples drawn from two different populations. The first sample, of 1000 observations, was drawn from a population with a real mean of 0 and a real standard deviation of 1. It is important to stress out the “real” adjective, because when researchers perform studies they have only estimates of the mean and the standard deviation. So, as far as we are concerned, we could go on and call the standard deviation, standard error. For the sake of simplicity, we will keep addressing them as mean (m) and standard deviation (sd). The second sample of the same numerosity, the same standard deviation (this is important) and just a 0.5 bigger mean. Now, I want you to keep in mind this, as the most important part of the simulation, since working with these fixed parameters gives us the capability of having a lot of random samples, but gives us a unique and specific scenario of premises.
+    
+    <div class="graphContainer"><img src="Images/pvaluegraphs/popdistri.svg" class="graphs"></div>
+
+    <p>So for the first part we have the two distributions plotted with a fitted curve to help us assess for normality. Usually in research there are tests that, for instance, rely on significance testing to assess for normality. I’m not stretching enough how this is not optimal on so many levels, but I will just add that a graphical assessment, especially with samples that big and the fact that we drew our samples from a script that is actually generating normal numbers, we would not need an obsolete test. 
+    As we can see from Figure 1, the distribution is exactly normal and the mean of the two samples differs exactly for 0.5. After this, the follow up task was to build up four different dataset, which entailed different measures, ranging from confidence intervals, effect sizes, p-values and the log10 transformation of p-values. Four different samples sizes have been chosen in order to control for power:
+    <ul><li>n=10, with a theoretical power of 18%;</li>
+        <li>n=30, with a theoretical power of 48%;</li>
+        <li> n=60, with a theoretical power of 78%;</li>
+        <li>n=100, with a theoretical power of 95%;</li></ul></p>
+    
+    Now, the simulation part took place. I performed 1000 t-tests and stored the results previously mentioned in 4 different datasets depending on the sample size. There are some details that I want to emphasize, that were not stretched out or presented vividly enough in the article from McCloskey that in my opinion mark a pretty important accent on the “scenario” argument we presented in the beginning.
+    The t-tests were performed between samples of the same number, even though considering the formula I implemented it was not necessary.
+    Following, the estimate utilized was Cohen's D, which is what I like to call a raw effect size that on equal standard deviations is none other than a difference between the two sample means. This is of crucial importance considering the premises we made in the beginning.
+    
+    <div class="graphContainer"><img src="Images/pvaluegraphs/ttest10samples.svg" class="graphs"></div>
+    <div class="graphContainer"><img src="Images/pvaluegraphs/ttest30samples.svg" class="graphs"></div>
+    <div class="graphContainer"><img src="Images/pvaluegraphs/ttest60samples.svg" class="graphs"></div>
+    <div class="graphContainer"><img src="Images/pvaluegraphs/ttest100samples.svg" class="graphs"></div>
+
+    Both different standard deviations and different sample sizes, which are an occurrence in research settings (for sample sizes, you have designs that force you to have even samples, but that’s not the case every time), would affect the results.
+    Plus, I won’t stress this enough, <b>we are basically creating perfect conditions for all other experimental biases that could potentially occur in a real life scenario.</b> 
+    After all this is considered, we have a distribution for the p-values results and I’ve transformed the values in a log10 function which is more of an intuitive visualization. Figures from 2 to 5 are representative of the distributions of the p-values.
+    The results yielded this:
+    <ul><li>230 significant results for the samples with 10 observations;</li>
+      <li>347 significant results for the samples with 30 observations;</li>
+        <li>807 significant results for the samples with 60 observations;</li>
+          <li>959 significant results for the samples with 100 observations;</li></ul>
+    
+    This is a similar result to what obtained by McCloskey and I would have not expected otherwise. Here, there’s something important to point out, and that is the fact that this is NOT the behavior of an individual p-value, but is a virtual repetition of 1000 experiments. This is unheard of in real life, and has brought non other than mathematical confirmation that the p-value, on the long run, agrees with the alpha or (type I error rate).
+    <br>A particular observation of this sort has been done by van Helden in a publication on Nature Methods of 2016. He goes on saying that “the p-value does its job”.
+    <br>This observation is true but only in the particular instance in which we are drawing samples from the same population. But, at this point, we could argue that the job is “done better” by the smaller p-value and that we would not need any p-value at all since by default, when we set up the two error rates from the design, we are about sure that on a large repetition of experiments we could get to a certain number of false positives and false negatives.  Eventually, repetition is the key attitude to implement in academia, and giving up a strict guide that would damage us in the long run.
+    But let’s go back first to the examples where the sampling occurs from two perfectly different populations, as we intended to do in the first place.
+    
+    <br>Let’s consider the case with 95% theoretical power. Theoretical and experimental power broadly agree, what we are witness on the bar plots is none other than 1 = Power + Beta, which is the cumulative probability being the alternative hypothesis true (i.e. the 1). 
+    Observing my graphs you guys can also see two other vertical lines, which represent the .01 and .001 levels of significance. If we still look at the 100 observations distribution we can clearly see that those levels predict an even smaller number of significant values. So, here’s when I want to invite you to be alert and think: how is it possible that a stricter p-value is worse at predicting true positive results? 
+    <br>And this is just the second half of the coin, but again, we are considering a scenario that almost never occurs in a real world setting, due to a lot of other factors involved. So yes, eventually an effect exists or not, but this is not what we are getting as a “message” from the data. If we use the p-value as a guide to discern what the data is telling us, we are likely to make a lot of wrong decisions.
+
+    
+    In one simple question here we see the “broadly agreement” argument. The reason is, that the threshold of the p-value is just arbitrary, why the actual alpha level, is part of a probabilistic framework which knows from the get go that we are, depending on degrees of freedom and standard deviation estimates from the population, accepting a certain rate of false positives and false negatives. In table 1 we can clearly see how the p-value of 0.5 is broadly outperforming all other threshold and not only that, we can see a linear trend of how to a higher p-value threshold correspond a lower rate of false negatives, becoming practically non existent with higher thresholds and high samples.
+    So, van Helden, who simulated 10000 (an order of magnitude above our experiment) t-tests but just with a sample size of 30, proceeds to repeat the same simulation sampling from two populations with an exact same mean. 
+    <br>Adding to this the same standard deviation is basically implying that you would get almost two perfectly equal samples, rendering all the work a futile “proof” that has little to no application or utility in a real life setting.
+
+
+   <br> This is the paradox of the deus ex machina, all knowing, that draws conclusion from a completely unrealistic perspective. So no, p-value and alpha level do not agree, unless you draw samples from the exact same population with absolute perfect form. Basically what van Helden is saying is that the alpha level agrees with itself.
+    But let’s argue from the (wrong) point of view of van Helden. In a real life scenario (we are still not bringing noise and design flaws in the picture) you could not tell which one of the p-values is part of the group of the “correct” p-values. One does not know from which population she’s sampling. So you do not know the actual nature of that p-value: if it results from the same population, or if there was noise in the estimates, if by sampling outliers would or could skew the standard deviation. A lot of other factors, which was the point of McCloskey et al., should be considered instead.
+    
+    <div class="graphContainer"><img src="Images/pvaluegraphs/bigGreed.svg" class="graphs" id="big"></div>
+
+    <br>I will go as far as not argue the point of replacing the p-values with the confidence intervals, since I do not share the same view as McCloskey. I don’t think that confidence intervals show precision, in a single setting. In fact they present the same flaws of p-values that I just presented. A narrower confidence interval would make you more confident erroneously if being presented with an effect size resulted from comparing samples from the same population. You could have a narrow effect size and an extremely small p-value and still have a false positive. 
+    These are some of the graphs I reproduced. In figure 6 we can see the distribution of the confidence intervals gap and their distribution. We can see that the gaps coming from the samples with 100 observations are narrower and hover around having a gap similar to the difference of the mean.
+    However, in figure 7 we can see the actual effect sizes. No matter the size of the sample the effect sizes were all centered around the .5 true difference of the mean. Again, this is possible because the framework of Neyman and Pearson works. Repetition is key, and we are witnessing this. Not wanting to delve too much into the confidence intervals, that is a topic that can be posted in a different article somewhere else.
+    On this composite eighth figure, we can instead see, on the right, how the “galaxy” plots are displaying a narrower and brighter profile comparing both significance and confidence gap at increased sample sizes. This goes to show that in general the two measures are responsive to degrees of freedom.
+    On a final note, I’ve also simulated 1000 t-tests with a sample size of 30, from the same population. As a fool proof I can say that no matter the size of the sample, 5% of the results were significant and thus type I errors. This however, does not provide any additional evidence in favor of the p-value, but confirms my argument of how van Helden confused an arbitrary threshold for an allegedly core proof that p-value agrees with the alpha level.
+    
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="justcredits">
+            <h3>
+                Copyrights owner: Antonio Logarzo &COPY;. All the material in this portfolio can be made use of if you kindly ask for it.
+            </h3>
+    
+        </div>
+    
+    
+    </footer>
+</div>
+</body>
+
+<!--- Libraries and scripts that the Home Page uses --->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="assets/homeAnim.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</html>
