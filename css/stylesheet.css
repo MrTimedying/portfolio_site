@@ -61,7 +61,7 @@ header {
 /* BODY OF THE HOMEPAGE */
 
 body {
-    background: url(/Images/grunge.jpg) center 0 no-repeat #fff;
+    background: url(Images/grunge.jpg) center 0 no-repeat #fff;
       background-attachment: scroll;
       background-size: auto;
     background-size: fill;
