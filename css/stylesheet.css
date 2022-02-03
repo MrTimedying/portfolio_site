@@ -61,7 +61,7 @@ header {
 /* BODY OF THE HOMEPAGE */
 
 body {
-    background: url(https://github.com/MrTimedying/portfolio_site/blob/main/Images/grunge.jpg) center 0 no-repeat #fff;
+    background: url(https://github.com/MrTimedying/portfolio_site/raw/main/Images/grunge.jpg) center 0 no-repeat #fff;
       background-attachment: scroll;
       background-size: auto;
     background-size: fill;
