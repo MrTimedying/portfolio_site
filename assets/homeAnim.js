@@ -34,7 +34,11 @@ profile.onmouseout = function(){
 }
 
 
+// Here I want to delete the curtain material after load with JQuery //
 
+setTimeout(function() {
+    $('.curtain').remove();
+  }, 2000);
 
 
 
